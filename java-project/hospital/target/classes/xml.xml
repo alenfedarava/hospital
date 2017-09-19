@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital>
+	<drivers>
+		<driver id="1">
+			<firstName>Semen</firstName>
+			<lastName>Semenov</lastName>
+			<age>33</age>
+			<jobTitle>Driver</jobTitle>
+			<address>a6</address>
+			<street>Nikiforova</street>
+			<houseNumber>6</houseNumber>
+			<phone>+375332345678</phone>
+			<cities>KOPYL</cities>
+			<dateBirth>31/12/1983</dateBirth>
+			<drivingExp>11</drivingExp>
+		</driver>
+		<driver id="2">
+			<firstName>Ivan</firstName>
+			<lastName>Pavlov</lastName>
+			<age>53</age>
+			<jobTitle>Driver</jobTitle>
+			<address>a7</address>
+			<street>Timiryazeva</street>
+			<houseNumber>89</houseNumber>
+			<phone>+375298999999</phone>
+			<cities>MINSK</cities>
+			<dateBirth>09/11/1963</dateBirth>
+			<drivingExp>30</drivingExp>
+		</driver>
+	</drivers>
+	<janitors>
+		<janitor id="3">
+			<firstName>Valentin</firstName>
+			<lastName>Smirnov</lastName>
+			<age>55</age>
+			<jobTitle>Janitor</jobTitle>
+			<address>a5</address>
+			<street>Raduznaya</street>
+			<houseNumber>5</houseNumber>
+			<phone>+375177896543</phone>
+			<cities>KLETSK</cities>
+			<dateBirth>12/12/1961</dateBirth>
+			<useInstruments>true</useInstruments>
+		</janitor>
+		<janitor id="4">
+			<firstName>Nikolay</firstName>
+			<lastName>Borisov</lastName>
+			<age>45</age>
+			<jobTitle>Janitor</jobTitle>
+			<address>a8</address>
+			<street>Mayakovskaya</street>
+			<houseNumber>13</houseNumber>
+			<phone>+375298976677</phone>
+			<cities>MINSK</cities>
+			<dateBirth>12/12/1971</dateBirth>
+			<useInstruments>true</useInstruments>
+		</janitor>
+	</janitors>
+	<surgeons>
+		<surgeon id="5">
+			<firstName>Stepan</firstName>
+			<lastName>Ivanov</lastName>
+			<age>45</age>
+			<jobTitle>Chief Surgeon</jobTitle>
+			<address>a9</address>
+			<street>Lenina</street>
+			<houseNumber>11</houseNumber>
+			<phone>+375291234321</phone>
+			<cities>MINSK</cities>
+			<dateBirth>12/12/1972</dateBirth>
+			<therapeuticPractice>true</therapeuticPractice>
+		</surgeon>
+		<surgeon id="6">
+			<firstName>Alexey</firstName>
+			<lastName>Borisov</lastName>
+			<age>25</age>
+			<jobTitle>Surgeon</jobTitle>
+			<address>a10</address>
+			<street>Lesnaya</street>
+			<houseNumber>1</houseNumber>
+			<phone>+37529087654</phone>
+			<cities>SMORGON</cities>
+			<dateBirth>12/12/1992</dateBirth>
+			<therapeuticPractice>false</therapeuticPractice>
+		</surgeon>
+	</surgeons>
+	<generalPractitioners>
+		<generalPractice id="7">
+			<firstName>Vladimir</firstName>
+			<lastName>Kozlov</lastName>
+			<age>44</age>
+			<jobTitle>General Practice</jobTitle>
+			<address>a11</address>
+			<street>Solnechnaya</street>
+			<houseNumber>8</houseNumber>
+			<phone>+375292345678</phone>
+			<cities>MINSK</cities>
+			<dateBirth>12/09/1973</dateBirth>
+			<surgicalPractice>true</surgicalPractice>
+		</generalPractice>
+		<generalPractice id="8">
+			<firstName>Artem</firstName>
+			<lastName>Petrov</lastName>
+			<age>25</age>
+			<jobTitle>General Practice</jobTitle>
+			<address>a12</address>
+			<street>Zudro</street>
+			<houseNumber>65</houseNumber>
+			<phone>+375334455667</phone>
+			<cities>MINSK</cities>
+			<dateBirth>01/04/1992</dateBirth>
+			<surgicalPractice>false</surgicalPractice>
+		</generalPractice>
+	</generalPractitioners>
+	<chiefAccountants>
+		<chiefAccountant id="9">
+			<firstName>Vladislav</firstName>
+			<lastName>Kuptsov</lastName>
+			<age>30</age>
+			<jobTitle>Chief Accountant</jobTitle>
+			<address>a13</address>
+			<street>Slobodskaya</street>
+			<houseNumber>131</houseNumber>
+			<phone>+375444455667</phone>
+			<cities>MINSK</cities>
+			<dateBirth>12/12/1988</dateBirth>
+			<economicEducation>true</economicEducation>
+		</chiefAccountant>
+		<chiefAccountant id="10">
+			<firstName>Kirill</firstName>
+			<lastName>Vasilevskiy</lastName>
+			<age>40</age>
+			<jobTitle>Chief Accountant</jobTitle>
+			<address>a14</address>
+			<street>Rubleva</street>
+			<houseNumber>1</houseNumber>
+			<phone>+375291230987</phone>
+			<cities>MINSK</cities>
+			<dateBirth>12/12/1978</dateBirth>
+			<economicEducation>true</economicEducation>
+		</chiefAccountant>
+	</chiefAccountants>
+	<chiefMedicals>
+		<chiefMedical id="11">
+			<firstName>Larysa</firstName>
+			<lastName>Stepanova</lastName>
+			<age>41</age>
+			<jobTitle>Chief Medical</jobTitle>
+			<address>a15</address>
+			<street>Pionerskaya</street>
+			<houseNumber>3</houseNumber>
+			<phone>+375255678909</phone>
+			<cities>MINSK</cities>
+			<dateBirth>12/12/1979</dateBirth>
+			<phD>true/</phD>
+			<awards>2</awards>
+		</chiefMedical>
+		<chiefMedical id="12">
+			<firstName>Ivan</firstName>
+			<lastName>Ivanovov</lastName>
+			<age>30</age>
+			<jobTitle>Chief Medical</jobTitle>
+			<address>a16</address>
+			<street>Romashkovaya</street>
+			<houseNumber>14</houseNumber>
+			<phone>+375298899001</phone>
+			<cities>MINSK</cities>
+			<dateBirth>12/01/1988</dateBirth>
+			<phD>false/</phD>
+			<awards>1</awards>
+		</chiefMedical>
+	</chiefMedicals>
+</hospital>

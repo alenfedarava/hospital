@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hospital>
+   <drivers>
+      <driver id="1">
+         <firstName>Semen</firstName>
+         <lastName>Semenov</lastName>
+         <age>33</age>
+         <jobTitle>Driver</jobTitle>
+         <address>a6</address>
+         <street>Nikiforova</street>
+         <houseNumber>6</houseNumber>
+         <phone>+375332345678</phone>
+         <cities>KOPYL</cities>
+         <dateBirth>31/12/1983</dateBirth>
+         <drivingExp>11</drivingExp>
+      </driver>
+      <driver id="2">
+         <firstName>Ivan</firstName>
+         <lastName>Pavlov</lastName>
+         <age>53</age>
+         <jobTitle>Driver</jobTitle>
+         <address>a7</address>
+         <street>Timiryazeva</street>
+         <houseNumber>89</houseNumber>
+         <phone>+375298999999</phone>
+         <cities>MINSK</cities>
+         <dateBirth>09/11/1963</dateBirth>
+         <drivingExp>30</drivingExp>
+      </driver>
+   </drivers>
+</hospital>

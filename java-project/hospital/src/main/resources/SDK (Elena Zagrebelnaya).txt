@@ -1,0 +1,84 @@
+SDK (Elena Zagrebelnaya)
+
+Total: 140
+
+Week total: 14 hrs
+
+3 July (Mon): AA Android
+4 July (Tue): RFQA, Android 17.7.0 blocker testing
+5 July (Wed): Android 17.7.0 MA; iOS 17.7.0 AA
+6 July (Thu): iOS 17.7.0 AA
+7 July (Fri): rfqa
+
+Week total: 34 hrs
+
+10 July (Mon): rfqa, atlas connection and sync test cases ranking
+11 July (Tue): rfqa, mmf onboading wikipage
+12 July (Wed): rfqa analytics, exploratory testing for perfect pairing feature
+13 July (Thu): rfqa
+14 July (Fri): rfqa, exploratory testing, analytics test cases review
+
+Week total: 33 hrs
+
+17 July (Mon): rfqa
+18 July (Tue): rfqa, shoe home spec review
+19 July (Wed): rfqa, 17.7.5 release testing
+20 July (Thu): ios 17.7.5 regression
+21 July (Fri): ios 17.7.5 regression
+
+Week total: 33 hrs
+
+24 July (Mon): Android 17.7.5 regression
+25 July (Tue): android regression
+26 July (Wed): android regression
+27 July (Thu): MA pass, rfqa
+28 July (Fri): rfqa perfect pairing
+
+Week total: 33 hrs
+
+31 July (Fri): rfqa, perfect pairing run
+
+Week total: 7 hrs
+
+
+Tizen (Alena Fedarava)
+
+Total: 140
+
+Week total: 14 hrs
+
+3 July (Mon): watchfaces v2 regression
+4 July (Tue): watchfaces v2 regression
+5 July (Wed): battery consumption tests watchfaces v2
+6 July (Thu): iOS support test analysis
+7 July (Fri): ios_support/4/ regression
+
+Week total: 34 hrs
+
+10 July (Mon): test analysis phase 7
+11 July (Tue): test analysis phase 7, bug regression. test plan for ios_support release
+12 July (Wed): possible improvements analysis, bug regression
+13 July (Thu): investigating possible gear app improvements
+14 July (Fri): test analysis for iOS support release
+
+Week total: 33 hrs
+
+17 July (Mon): test analysis ios support feature, bug regression
+18 July (Tue): watchfaces v2 regression, build testing documentation for phase 7
+19 July (Wed): app review investigation, analytics test cases
+20 July (Thu): work on user’s feedback 
+21 July (Fri): test scenarios revision, bug regression phase 7
+
+Week total: 33 hrs
+
+24 July (Mon): seller office feedback review, review and close tickets in TIZS project
+25 July (Tue): complete user’s feedback review
+26 July (Wed): demo apps requirements review, phase 7 BR
+27 July (Thu): review customer’s feedback
+28 July (Fri): phase 7 bug regression, test cases revision
+
+Week total: 33 hrs
+
+31 July (Fri): demo apps smoke test, vqa part 3 watch apps test
+
+Week total: 7 hrs
