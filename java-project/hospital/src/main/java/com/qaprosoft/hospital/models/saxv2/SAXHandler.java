@@ -20,7 +20,7 @@ public class SAXHandler extends DefaultHandler {
 
 		switch (qName) {
 
-		case "employee":
+		case "driver":
 			dr = new Driver();
 			dr.setId(attributes.getValue("id"));
 			break;
@@ -31,7 +31,7 @@ public class SAXHandler extends DefaultHandler {
 	public void endElement(String uri, String localName, String qName) throws SAXException {
 		switch (qName) {
 		// Add the employee to list once end tag is found
-		case "employee":
+		case "driver":
 			drList.add(dr);
 			break;
 		// For all other end tags the employee has to be updated.

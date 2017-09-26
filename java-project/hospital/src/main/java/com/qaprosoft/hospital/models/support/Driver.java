@@ -38,6 +38,9 @@ public class Driver extends Support implements IEat{
 	public void setId(String id) {
 		this.id = id;
 	}
-
-
+	public String toString() {
+        return "Driver:: ID="+this.id+" Name=" + this.firstName + " Surname=" + this.lastName +" Age=" + this.getAge() + " Address=" + this.getAddress() +
+                " Role=" + this.getJobTitle();
+//        + " Date of Birth=" + this.getDateBirth()
+}
 }
