@@ -16,9 +16,9 @@ import java.util.Date;
  */
 public abstract class HospitalStaff {
 
-	public String firstName;
-	public String lastName;
-	private int age;
+	private String firstName;
+	private String lastName;
+	private Integer age;
 	/**
 	 * The occupation of particular employee.
 	 */
@@ -53,7 +53,7 @@ public abstract class HospitalStaff {
 		this.lastName = string;
 	}
 
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
 	/**
@@ -66,13 +66,14 @@ public abstract class HospitalStaff {
 	 *                on input error.
 	 * @see AgeOutOfBoundsException
 	 */
-	public void setAge(int age) throws AgeOutOfBoundsException {
-		try {
-			if (age > 100 || age < 18)
-				;
-		} catch (UncheckedIOException u) {
-			throw new AgeOutOfBoundsException("please enter a value between 10 and 100", u);
-		}
+	public void setAge(Integer age) {
+//			throws AgeOutOfBoundsException {
+//		try {
+//			if (age > 100 || age < 18)
+//				;
+//		} catch (UncheckedIOException u) {
+//			throw new AgeOutOfBoundsException("please enter a value between 10 and 100", u);
+//		}
 		this.age = age;
 	}
 

@@ -15,6 +15,7 @@ import com.qaprosoft.hospital.models.administration.ChiefAccountant;
 import com.qaprosoft.hospital.models.administration.ChiefMedical;
 import com.qaprosoft.hospital.models.medical.GeneralPractice;
 import com.qaprosoft.hospital.models.medical.Surgeon;
+import com.qaprosoft.hospital.models.support.Driver;
 import com.qaprosoft.hospital.models.support.Janitor;
 import com.qaprosoft.hospital.models.*;
 public class MainClass {
@@ -121,7 +122,8 @@ public class MainClass {
 		ja.setPrivileges(false);
 		ja.setRelatedEducation(false);
 		ja.setUseInstruments(true);
-
+	
+		
 		Administration me = new ChiefMedical();
 		Administration ac = new ChiefAccountant();
 		me.decMaker();

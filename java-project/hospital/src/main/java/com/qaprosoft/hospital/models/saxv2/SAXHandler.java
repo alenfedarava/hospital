@@ -1,6 +1,7 @@
 package com.qaprosoft.hospital.models.saxv2;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import org.xml.sax.Attributes;
@@ -13,7 +14,7 @@ public class SAXHandler extends DefaultHandler {
 	List<Driver> drList = new ArrayList<>();
 	Driver dr = null;
 	String content = null;
-//	int value = null;
+	Integer value = null;
 
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
@@ -30,20 +31,22 @@ public class SAXHandler extends DefaultHandler {
 	@Override
 	public void endElement(String uri, String localName, String qName) throws SAXException {
 		switch (qName) {
-		// Add the employee to list once end tag is found
+
 		case "driver":
 			drList.add(dr);
 			break;
-		// For all other end tags the employee has to be updated.
 		case "firstName":
-			dr.firstName = content;
+			dr.setFirstName(content);
 			break;
 		case "lastName":
-			dr.lastName = content;
+			dr.setLastName(content);
 			break;
-//		case "age":
-//			dr.setAge(content);
-//			break;
+		case "jobTitle":
+			dr.setJobTitle(content);
+			break;
+		case "age":
+			dr.setAge(value);
+			break;
 		}
 	}
 
