@@ -1,7 +1,6 @@
 package com.qaprosoft.hospital.models.saxv2;
 
 import java.util.ArrayList;
-
 import java.util.List;
 
 import org.xml.sax.Attributes;
