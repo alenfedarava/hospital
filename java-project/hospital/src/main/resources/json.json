@@ -1,17 +1,18 @@
 {
    "drivers":[
       {
-         "firstName":"Semen",
-         "lastName":"Semenov",
-         "age":"33",
-         "jobTitle":"Driver",
-         "address":"a6",
-         "street":"Nikiforova",
-         "houseNumber":"6",
-         "phone":"+375332345678",
-         "cities":"KOPYL",
-         "dateBirth":"31/12/1983",
-         "drivingExp":"11"
+         "firstName": "Semen",
+         "lastName": "Semenov",
+         "age": "33",
+         "jobTitle": "Driver",
+         "address": {
+            "street":"Nikiforova",
+            "houseNumber":"6",
+            "phone":"+375332345678",
+            "cities":"KOPYL",
+         },
+         "dateBirth": "31/12/1983",
+         "drivingExp": "11"
       },
       {
          "firstName":"Ivan",

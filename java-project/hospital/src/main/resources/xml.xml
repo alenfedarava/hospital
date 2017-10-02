@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hospital>
 	<drivers>
-		<driver id="1">
+		<driver>
 			<firstName>Semen</firstName>
 			<lastName>Semenov</lastName>
 			<age>33</age>
@@ -14,7 +14,7 @@
 			<dateBirth>31/12/1983</dateBirth>
 			<drivingExp>11</drivingExp>
 		</driver>
-		<driver id="2">
+		<driver>
 			<firstName>Ivan</firstName>
 			<lastName>Pavlov</lastName>
 			<age>53</age>
@@ -29,7 +29,7 @@
 		</driver>
 	</drivers>
 	<janitors>
-		<janitor id="3">
+		<janitor>
 			<firstName>Valentin</firstName>
 			<lastName>Smirnov</lastName>
 			<age>55</age>
@@ -42,7 +42,7 @@
 			<dateBirth>12/12/1961</dateBirth>
 			<useInstruments>true</useInstruments>
 		</janitor>
-		<janitor id="4">
+		<janitor>
 			<firstName>Nikolay</firstName>
 			<lastName>Borisov</lastName>
 			<age>45</age>
@@ -57,7 +57,7 @@
 		</janitor>
 	</janitors>
 	<surgeons>
-		<surgeon id="5">
+		<surgeon>
 			<firstName>Stepan</firstName>
 			<lastName>Ivanov</lastName>
 			<age>45</age>
@@ -70,7 +70,7 @@
 			<dateBirth>12/12/1972</dateBirth>
 			<therapeuticPractice>true</therapeuticPractice>
 		</surgeon>
-		<surgeon id="6">
+		<surgeon>
 			<firstName>Alexey</firstName>
 			<lastName>Borisov</lastName>
 			<age>25</age>
@@ -85,7 +85,7 @@
 		</surgeon>
 	</surgeons>
 	<generalPractitioners>
-		<generalPractice id="7">
+		<generalPractice>
 			<firstName>Vladimir</firstName>
 			<lastName>Kozlov</lastName>
 			<age>44</age>
@@ -98,7 +98,7 @@
 			<dateBirth>12/09/1973</dateBirth>
 			<surgicalPractice>true</surgicalPractice>
 		</generalPractice>
-		<generalPractice id="8">
+		<generalPractice>
 			<firstName>Artem</firstName>
 			<lastName>Petrov</lastName>
 			<age>25</age>
@@ -113,7 +113,7 @@
 		</generalPractice>
 	</generalPractitioners>
 	<chiefAccountants>
-		<chiefAccountant id="9">
+		<chiefAccountant>
 			<firstName>Vladislav</firstName>
 			<lastName>Kuptsov</lastName>
 			<age>30</age>
@@ -126,7 +126,7 @@
 			<dateBirth>12/12/1988</dateBirth>
 			<economicEducation>true</economicEducation>
 		</chiefAccountant>
-		<chiefAccountant id="10">
+		<chiefAccountant>
 			<firstName>Kirill</firstName>
 			<lastName>Vasilevskiy</lastName>
 			<age>40</age>
@@ -141,7 +141,7 @@
 		</chiefAccountant>
 	</chiefAccountants>
 	<chiefMedicals>
-		<chiefMedical id="11">
+		<chiefMedical>
 			<firstName>Larysa</firstName>
 			<lastName>Stepanova</lastName>
 			<age>41</age>
@@ -155,7 +155,7 @@
 			<phD>true/</phD>
 			<awards>2</awards>
 		</chiefMedical>
-		<chiefMedical id="12">
+		<chiefMedical>
 			<firstName>Ivan</firstName>
 			<lastName>Ivanovov</lastName>
 			<age>30</age>

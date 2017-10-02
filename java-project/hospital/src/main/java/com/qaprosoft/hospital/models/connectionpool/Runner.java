@@ -3,6 +3,8 @@ package com.qaprosoft.hospital.models.connectionpool;
 public class Runner {
 
 	public static void main(String[] args) {
+		
+		ConnectionPool.getInstance();
 
 		System.out.println(Thread.currentThread().getName() + ": RunnableTest");
 

@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
 public class ConnectionPool {
-//	private static final Logger LOGGER = (Logger) LogManager.getLogger(ConnectionPool.class);
+	private static final Logger LOGGER = (Logger) LogManager.getLogger(ConnectionPool.class);
 	private static int poolsize = 4;
 	private final static ConnectionPool instance = new ConnectionPool(poolsize);
 
@@ -17,25 +17,25 @@ public class ConnectionPool {
 
 	}
 
-	public ConnectionPool getIntastance() {
+	public static ConnectionPool getInstance() {
 		return instance;
 	}
 
-	private void getConnection(Connection connection) throws Exception {
+	private Connection getConnection() throws Exception {
 		if (pool.isEmpty() && Connection.availableConn < poolsize) {
 			pool.add(new Connection());
-//			LOGGER.info("Connection has been created!");
+			LOGGER.info("Connection has been created!");
 			pool.take();
-//			LOGGER.info("Connection has been locked!");
+			LOGGER.info("Connection has been locked!");
 		} else if (pool.size() > 0)
 			;
-		pool.take();
+		return pool.take();
 	}
 
 	private void releaseConnection(Connection connection) {
 		if (connection != null && pool.size() < poolsize)
 			pool.add(connection);
-//		LOGGER.info("Connection has been returned!");
+		LOGGER.info("Connection has been returned!");
 	}
 
 	private void closeConnection(Connection connection) {
