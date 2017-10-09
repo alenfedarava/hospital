@@ -86,13 +86,13 @@ public abstract class HospitalStaff {
 	}
 
 	public String getDateBirth() {
-		String pattern = "MM/dd/yyyy";
+		String pattern = "dd/MM/yyyy";
 		SimpleDateFormat format = new SimpleDateFormat(pattern);
 		return format.format(dateBirth);
 	}
 
 	public void setDateBirth(String dateBirth) {
-		String pattern = "MM/dd/yyyy";
+		String pattern = "dd/MM/yyyy";
 		SimpleDateFormat format = new SimpleDateFormat(pattern);
 		try {
 			Date date = format.parse(pattern);

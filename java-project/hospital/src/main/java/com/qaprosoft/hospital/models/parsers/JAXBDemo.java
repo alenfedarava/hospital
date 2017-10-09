@@ -23,9 +23,9 @@ public class JAXBDemo {
 			lOGGER.info(jaxbBuilder.getDriversList().get(0).toString());
 			lOGGER.info(jaxbBuilder.getDriversList().get(1).toString());
 		} catch (JAXBException e) {
-			lOGGER.info(e.getMessage());
+			lOGGER.error(e);
 		} catch (FileNotFoundException e) {
-			lOGGER.info(e.getMessage());
+			lOGGER.error(e);
 		}
 
 	}

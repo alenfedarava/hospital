@@ -2,7 +2,10 @@ package com.qaprosoft.hospital.models.parsers;
 
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import com.qaprosoft.hospital.models.administration.ChiefAccountant;
@@ -13,25 +16,31 @@ import com.qaprosoft.hospital.models.support.Driver;
 import com.qaprosoft.hospital.models.support.Janitor;
 
 @XmlRootElement(name = "hospital")
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class HospitalJAXB {
-
-	@XmlElement(name = "drivers")
+	
+	@XmlElementWrapper(name="drivers")
+	@XmlElement(name = "driver")
 	private List<Driver> driversList;
 
-	@XmlElement(name = "janitors")
+	@XmlElementWrapper(name="janitors")
+	@XmlElement(name = "janitor")
 	private List<Janitor> janitorsList;
 
-	@XmlElement(name = "surgeons")
+	@XmlElementWrapper(name="surgeons")
+	@XmlElement(name = "surgeon")
 	private List<Surgeon> surgeonsList;
 
-	@XmlElement(name = "generalPractitioners")
+	@XmlElementWrapper(name="generalPractitioners")
+	@XmlElement(name = "generalPractice")
 	private List<GeneralPractice> generalPractitionersList;
 
-	@XmlElement(name = "chiefAccountants")
+	@XmlElementWrapper(name="chiefAccountants")
+	@XmlElement(name = "chiefAccountant")
 	private List<ChiefAccountant> chiefAccountantsList;
 
-	@XmlElement(name = "chiefMedicals")
+	@XmlElementWrapper(name="chiefMedicals")
+	@XmlElement(name = "chiefMedical")
 	private List<ChiefMedical> chiefMedicalsList;
 
 	public List<Driver> getDriversList() {

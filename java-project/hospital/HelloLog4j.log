@@ -1,1 +1,2 @@
-2017-10-09 13:46:26,618 main INFO  parsers.JAXBDemo - 6 counts of IllegalAnnotationExceptions
+2017-10-09 17:19:21,875 main INFO  parsers.JAXBDemo - Driver:: ID=null Name=Semen Surname=Semenov Age=33 Address=nullnull0null Role=Driver
+2017-10-09 17:19:21,878 main INFO  parsers.JAXBDemo - Driver:: ID=null Name=Ivan Surname=Pavlov Age=53 Address=nullnull0null Role=Driver
