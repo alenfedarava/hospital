@@ -7,7 +7,10 @@
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/tree/MainTree.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/IEat.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/parsers/JacksonDemo.java
+/Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/parsers/DateConverter.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/support/Driver.java
+/Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/parsers/HospitalJAXB.java
+/Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/parsers/JAXBDemo.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/connectionpool/Runner.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/parsers/HospitalJackson.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/support/Support.java
@@ -23,7 +26,9 @@
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/Reflection.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/saxv2/SAXHandler.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/saxv2/SAXParserDemo.java
+/Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/DAO/UserController.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/MainClass.java
+/Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/DAO/AbstractController.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/support/Janitor.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/Workable.java
 /Users/alenafedarava/hospital/java-project/hospital/src/main/java/com/qaprosoft/hospital/models/tree/BST.java

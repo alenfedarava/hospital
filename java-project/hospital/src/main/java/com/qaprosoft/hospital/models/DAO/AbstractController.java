@@ -13,8 +13,8 @@ public abstract class AbstractController<E, K> {
 	private ConnectionPool connectionPool;
 
 	public AbstractController() {
-		connectionPool = ConnectionPool.getConnection();
-		connection = connectionPool.getConnection();
+//		connectionPool = ConnectionPool.getConnection();
+//		connection = connectionPool.getConnection();
 	}
 
 	public abstract List<E> getAll();
@@ -29,11 +29,11 @@ public abstract class AbstractController<E, K> {
 
 	public PreparedStatement getPrepareStatement(String sql) {
 		PreparedStatement ps = null;
-		try {
-			ps = connection.prepareStatement(sql);
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
+//		try {
+////			ps = connection.toString()(sql);
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
 
 		return ps;
 	}
