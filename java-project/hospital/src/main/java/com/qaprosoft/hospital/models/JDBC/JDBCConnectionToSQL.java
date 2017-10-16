@@ -71,7 +71,7 @@ public class JDBCConnectionToSQL {
 			resultSet = preparedStatement.executeQuery();
 			while (resultSet.next()) {
 				LOGGER.info("" + resultSet.getRow() + "\t Employees_id " + resultSet.getInt("id") + "\t"
-						+ resultSet.getString("name") + " " + resultSet.getString("surname"));
+						+ resultSet.getString("firstname") + " " + resultSet.getString("lastname"));
 			}
 
 		} catch (SQLException e) {
