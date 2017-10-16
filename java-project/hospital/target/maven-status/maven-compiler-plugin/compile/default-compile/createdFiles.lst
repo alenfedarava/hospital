@@ -1,3 +1,4 @@
+com/qaprosoft/hospital/models/JDBC/JDBCConnectionToSQL.class
 com/qaprosoft/hospital/models/DAO/AbstractController.class
 com/qaprosoft/hospital/models/Reflection.class
 com/qaprosoft/hospital/models/connectionpool/MyThread.class
