@@ -1,29 +1,30 @@
 {
    "drivers":[
       {
-         "firstName": "Semen",
-         "lastName": "Semenov",
-         "age": "33",
-         "jobTitle": "Driver",
-         "address": {
+         "firstName":"Semen",
+         "lastName":"Semenov",
+         "age":"33",
+         "jobTitle":"Driver",
+         "address":{
             "street":"Nikiforova",
             "houseNumber":"6",
             "phone":"+375332345678",
-            "cities":"KOPYL",
+            "cities":"KOPYL"
          },
-         "dateBirth": "31/12/1983",
-         "drivingExp": "11"
+         "dateBirth":"31/12/1983",
+         "drivingExp":"11"
       },
       {
          "firstName":"Ivan",
          "lastName":"Pavlov",
          "age":"53",
          "jobTitle":"Driver",
-         "address":"a7",
-         "street":"Timiryazeva",
-         "houseNumber":"89",
-         "phone":"+375298999999",
-         "cities":"MINSK",
+         "address":{         
+            "street":"Timiryazeva",
+            "houseNumber":"89",
+            "phone":"+375298999999",
+            "cities":"MINSK"
+         },
          "dateBirth":"09/11/1963",
          "drivingExp":"30"
       }
@@ -34,11 +35,12 @@
          "lastName":"Smirnov",
          "age":"55",
          "jobTitle":"Janitor",
-         "address":"a5",
-         "street":"Raduznaya",
-         "houseNumber":"5",
-         "phone":"+375177896543",
-         "cities":"KLETSK",
+         "address":{         
+            "street":"Raduznaya",
+            "houseNumber":"5",
+            "phone":"+375177896543",
+            "cities":"KLETSK"
+         },
          "dateBirth":"12/12/1961",
          "useInstruments":"true"
       },
@@ -47,11 +49,12 @@
          "lastName":"Borisov",
          "age":"45",
          "jobTitle":"Janitor",
-         "address":"a8",
-         "street":"Mayakovskaya",
-         "houseNumber":"13",
-         "phone":"+375298976677",
-         "cities":"MINSK",
+         "address":{
+            "street":"Mayakovskaya",
+            "houseNumber":"13",
+            "phone":"+375298976677",
+            "cities":"MINSK"  
+         },
          "dateBirth":"12/12/1971",
          "useInstruments":"true"
       }
@@ -62,11 +65,12 @@
          "lastName":"Ivanov",
          "age":"45",
          "jobTitle":"Chief Surgeon",
-         "address":"a9",
-         "street":"Lenina",
-         "houseNumber":"11",
-         "phone":"+375291234321",
-         "cities":"MINSK",
+         "address":{
+            "street":"Lenina",
+            "houseNumber":"11",
+            "phone":"+375291234321",
+            "cities":"MINSK" 
+         },
          "dateBirth":"12/12/1972",
          "therapeuticPractice":"true"
       },
@@ -75,11 +79,12 @@
          "lastName":"Borisov",
          "age":"25",
          "jobTitle":"Surgeon",
-         "address":"a10",
-         "street":"Lesnaya",
-         "houseNumber":"1",
-         "phone":"+37529087654",
-         "cities":"SMORGON",
+         "address":{
+            "street":"Lesnaya",
+            "houseNumber":"1",
+            "phone":"+37529087654",
+            "cities":"UZDA"  
+         },
          "dateBirth":"12/12/1992",
          "therapeuticPractice":"false"
       }
@@ -90,11 +95,12 @@
          "lastName":"Kozlov",
          "age":"44",
          "jobTitle":"General Practice",
-         "address":"a11",
-         "street":"Solnechnaya",
-         "houseNumber":"8",
-         "phone":"+375292345678",
-         "cities":"MINSK",
+         "address":{
+            "street":"Solnechnaya",
+            "houseNumber":"8",
+            "phone":"+375292345678",
+            "cities":"MINSK"
+         },
          "dateBirth":"12/09/1973",
          "surgicalPractice":"true"
       },
@@ -103,11 +109,12 @@
          "lastName":"Petrov",
          "age":"25",
          "jobTitle":"General Practice",
-         "address":"a12",
-         "street":"Zudro",
-         "houseNumber":"65",
-         "phone":"+375334455667",
-         "cities":"MINSK",
+         "address":{
+            "street":"Zudro",
+            "houseNumber":"65",
+            "phone":"+375334455667",
+            "cities":"MINSK"
+         },
          "dateBirth":"01/04/1992",
          "surgicalPractice":"false"
       }
@@ -118,11 +125,12 @@
          "lastName":"Kuptsov",
          "age":"30",
          "jobTitle":"Chief Accountant",
-         "address":"a13",
-         "street":"Slobodskaya",
-         "houseNumber":"131",
-         "phone":"+375444455667",
-         "cities":"MINSK",
+         "address":{
+            "street":"Slobodskaya",
+            "houseNumber":"131",
+            "phone":"+375444455667",
+            "cities":"MINSK"
+         },
          "dateBirth":"12/12/1988",
          "economicEducation":"true"
       },
@@ -131,11 +139,12 @@
          "lastName":"Vasilevskiy",
          "age":"40",
          "jobTitle":"Chief Accountant",
-         "address":"a14",
-         "street":"Rubleva",
-         "houseNumber":"1",
-         "phone":"+375291230987",
-         "cities":"MINSK",
+         "address":{
+            "street":"Rubleva",
+            "houseNumber":"1",
+            "phone":"+375291230987",
+            "cities":"MINSK" 
+         },
          "dateBirth":"12/12/1978",
          "economicEducation":"true"
       }
@@ -146,13 +155,14 @@
          "lastName":"Stepanova",
          "age":"41",
          "jobTitle":"Chief Medical",
-         "address":"a15",
-         "street":"Pionerskaya",
-         "houseNumber":"3",
-         "phone":"+375255678909",
-         "cities":"MINSK",
+         "address":{
+            "street":"Pionerskaya",
+            "houseNumber":"3",
+            "phone":"+375255678909",
+            "cities":"MINSK"
+         },
          "dateBirth":"12/12/1979",
-         "phD":"true/",
+         "phD":"true",
          "awards":"2"
       },
       {
@@ -160,13 +170,14 @@
          "lastName":"Ivanovov",
          "age":"30",
          "jobTitle":"Chief Medical",
-         "address":"a16",
-         "street":"Romashkovaya",
-         "houseNumber":"14",
-         "phone":"+375298899001",
-         "cities":"MINSK",
+         "address":{
+            "street":"Romashkovaya",
+            "houseNumber":"14",
+            "phone":"+375298899001",
+            "cities":"MINSK" 
+         },
          "dateBirth":"12/01/1988",
-         "phD":"false/",
+         "phD":"false",
          "awards":"1"
       }
    ]

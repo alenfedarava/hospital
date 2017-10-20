@@ -2,12 +2,13 @@ package com.qaprosoft.hospital.models.parsers;
 
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import com.qaprosoft.hospital.models.Address;
 import com.qaprosoft.hospital.models.administration.ChiefAccountant;
 import com.qaprosoft.hospital.models.administration.ChiefMedical;
 import com.qaprosoft.hospital.models.medical.GeneralPractice;
@@ -42,6 +43,16 @@ public class HospitalJAXB {
 	@XmlElementWrapper(name="chiefMedicals")
 	@XmlElement(name = "chiefMedical")
 	private List<ChiefMedical> chiefMedicalsList;
+	
+	private List<Address> addressList;
+
+	public List<Address> getAddressList() {
+		return addressList;
+	}
+
+	public void setAddressList(List<Address> addressList) {
+		this.addressList = addressList;
+	}
 
 	public List<Driver> getDriversList() {
 		return driversList;

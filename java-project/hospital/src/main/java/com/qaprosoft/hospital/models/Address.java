@@ -1,10 +1,22 @@
 package com.qaprosoft.hospital.models;
 
-public class Address {
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
+import com.fasterxml.jackson.annotation.JsonSetter;
+
+@XmlRootElement(name = "address")
+@JsonRootName(value = "address")
+public class Address {
+	@JsonProperty
 	private String street;
+	@JsonProperty
 	private int houseNumber;
+	@JsonProperty
 	private String phone;
+	@JsonProperty
 	private Cities cities;
 
 	Address(String city, String street, int houseNumber, String phone, Cities cities) {
@@ -27,6 +39,8 @@ public class Address {
 		return street;
 	}
 
+	@XmlElement(name = "street")
+	@JsonSetter(value = "street")
 	public void setStreet(String street) {
 		this.street = street;
 	}
@@ -35,6 +49,8 @@ public class Address {
 		return houseNumber;
 	}
 
+	@XmlElement(name = "houseNumber")
+	@JsonSetter(value = "houseNumber")
 	public void setHouseNumber(int houseNumber) {
 		this.houseNumber = houseNumber;
 	}
@@ -43,10 +59,14 @@ public class Address {
 		return phone;
 	}
 
+	@XmlElement(name = "phone")
+	@JsonSetter(value = "phone")
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
+	@XmlElement(name = "cities")
+	@JsonSetter(value = "cities")
 	public Cities getCities() {
 		return cities;
 	}

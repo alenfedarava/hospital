@@ -22,6 +22,7 @@ public class JacksonDemo {
 			HospitalJackson jacksonBuilder = mapper.readValue(reader, HospitalJackson.class);
 			lOGGER.info(jacksonBuilder.getDrivers().get(0).toString());
 			lOGGER.info(jacksonBuilder.getDrivers().get(1).toString());
+			lOGGER.info(jacksonBuilder.getJanitors().get(0).toString());
 		} catch (JsonGenerationException e) {
 			lOGGER.info(e.getMessage());
 		} catch (JsonMappingException e) {

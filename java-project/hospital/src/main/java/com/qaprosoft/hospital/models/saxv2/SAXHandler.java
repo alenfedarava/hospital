@@ -7,13 +7,17 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import com.qaprosoft.hospital.models.Address;
 import com.qaprosoft.hospital.models.support.Driver;
 
 public class SAXHandler extends DefaultHandler {
 	List<Driver> drList = new ArrayList<>();
+	List<Address> address = new ArrayList<>();
 	Driver dr = null;
+	Address a = null;
 	String content = null;
 	Integer value = null;
+	Object object = null;
 
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
@@ -23,6 +27,9 @@ public class SAXHandler extends DefaultHandler {
 		case "driver":
 			dr = new Driver();
 			dr.setId(attributes.getValue("id"));
+			break;
+		case "address":
+			a = new Address();
 			break;
 		}
 	}
@@ -44,14 +51,22 @@ public class SAXHandler extends DefaultHandler {
 			dr.setJobTitle(content);
 			break;
 		case "age":
-			dr.setAge(value);
+			dr.setAge(Integer.valueOf(content));
 			break;
+		case "drivingExp":
+			dr.setDrivingExp(Integer.valueOf(content));
+			break;
+		case "address":
+			a.setStreet(content);
+			break;
+			
 		}
 	}
 
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
 		content = String.copyValueOf(ch, start, length).trim();
+		
 	}
 
 }

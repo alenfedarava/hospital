@@ -1,2 +1,3 @@
-2017-10-16 17:56:41,531 main INFO  parsers.JacksonDemo - Unexpected character ('}' (code 125)): was expecting double-quote to start field name
- at [Source: /Users/alenafedarava/hospital/java-project/hospital/src/main/resources/json.json; line: 13, column: 11]
+2017-10-20 13:32:16,037 main INFO  parsers.JAXBDemo - Driver:: ID=null Name=Semen Surname=Semenov Age=33 Address=KOPYLNikiforova6+375332345678 Role=Driver Driving expierence=11 Address=KOPYLNikiforova6+375332345678
+2017-10-20 13:32:16,042 main INFO  parsers.JAXBDemo - Driver:: ID=null Name=Ivan Surname=Pavlov Age=53 Address=MINSKTimiryazeva89+375298999999 Role=Driver Driving expierence=30 Address=MINSKTimiryazeva89+375298999999
+2017-10-20 13:32:16,042 main INFO  parsers.JAXBDemo - Janitor:: Name=Valentin Surname=Smirnov Age=55 Address=KLETSKRaduznaya5+375177896543 Role=Janitor Use instruments=true Address=KLETSKRaduznaya5+375177896543

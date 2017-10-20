@@ -1,9 +1,16 @@
 package com.qaprosoft.hospital.models;
 
-import java.io.UncheckedIOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonSetter;
+
+import com.qaprosoft.hospital.models.parsers.DateConverter;
 
 /**
  * The HospitalStaff class represents the structure of the whole hospital.
@@ -14,17 +21,23 @@ import java.util.Date;
  * @version 1.0
  * @since 2017-07-17
  */
+@XmlAccessorType(XmlAccessType.FIELD)
 public abstract class HospitalStaff {
-
+	@JsonProperty
 	private String firstName;
+	@JsonProperty
 	private String lastName;
+	@JsonProperty
 	private Integer age;
 	/**
 	 * The occupation of particular employee.
 	 */
+	@JsonProperty
 	private String jobTitle;
-
+	@JsonProperty
 	private Address address;
+	@XmlJavaTypeAdapter(DateConverter.class)
+	@JsonProperty
 	private Date dateBirth;
 
 	public abstract void work();
@@ -32,7 +45,7 @@ public abstract class HospitalStaff {
 	public Address getAddress() {
 		return address;
 	}
-
+	@JsonSetter
 	public void setAddress(Address address) {
 		this.address = address;
 	}
@@ -40,7 +53,7 @@ public abstract class HospitalStaff {
 	public String getFirstName() {
 		return firstName;
 	}
-
+	@JsonSetter
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
@@ -48,7 +61,7 @@ public abstract class HospitalStaff {
 	public String getLastName() {
 		return lastName;
 	}
-
+	@JsonSetter
 	public void setLastName(String string) {
 		this.lastName = string;
 	}
@@ -56,6 +69,7 @@ public abstract class HospitalStaff {
 	public Integer getAge() {
 		return age;
 	}
+
 	/**
 	 * This is the method which is used to set the age of the object.
 	 * 
@@ -66,21 +80,23 @@ public abstract class HospitalStaff {
 	 *                on input error.
 	 * @see AgeOutOfBoundsException
 	 */
+	@JsonSetter
 	public void setAge(Integer age) {
-//			throws AgeOutOfBoundsException {
-//		try {
-//			if (age > 100 || age < 18)
-//				;
-//		} catch (UncheckedIOException u) {
-//			throw new AgeOutOfBoundsException("please enter a value between 10 and 100", u);
-//		}
+		// throws AgeOutOfBoundsException {
+		// try {
+		// if (age > 100 || age < 18)
+		// ;
+		// } catch (UncheckedIOException u) {
+		// throw new AgeOutOfBoundsException("please enter a value between 10 and 100",
+		// u);
+		// }
 		this.age = age;
 	}
 
 	public String getJobTitle() {
 		return jobTitle;
 	}
-
+	@JsonSetter
 	public void setJobTitle(String string) {
 		this.jobTitle = string;
 	}
@@ -90,18 +106,17 @@ public abstract class HospitalStaff {
 		SimpleDateFormat format = new SimpleDateFormat(pattern);
 		return format.format(dateBirth);
 	}
-
+	@JsonSetter
 	public void setDateBirth(String dateBirth) {
 		String pattern = "MM/dd/yyyy";
 		SimpleDateFormat format = new SimpleDateFormat(pattern);
 		try {
-			Date date = format.parse(pattern);
+			Date date = format.parse(dateBirth);
 			this.dateBirth = date;
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
-} 
-
+}

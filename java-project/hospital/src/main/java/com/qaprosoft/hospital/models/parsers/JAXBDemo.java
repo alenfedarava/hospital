@@ -22,6 +22,7 @@ public class JAXBDemo {
 			HospitalJAXB jaxbBuilder = (HospitalJAXB) unmarshaller.unmarshal(reader);
 			lOGGER.info(jaxbBuilder.getDriversList().get(0).toString());
 			lOGGER.info(jaxbBuilder.getDriversList().get(1).toString());
+			lOGGER.info(jaxbBuilder.getJanitorsList().get(0).toString());
 		} catch (JAXBException e) {
 			lOGGER.error(e);
 		} catch (FileNotFoundException e) {
