@@ -1,5 +1,6 @@
 package com.qaprosoft.hospital.models.administration;
 
+import com.qaprosoft.hospital.models.AbstractEntity;
 import com.qaprosoft.hospital.models.HospitalStaff;
 
 /**

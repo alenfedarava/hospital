@@ -1,3 +1,5 @@
-2017-10-20 13:32:16,037 main INFO  parsers.JAXBDemo - Driver:: ID=null Name=Semen Surname=Semenov Age=33 Address=KOPYLNikiforova6+375332345678 Role=Driver Driving expierence=11 Address=KOPYLNikiforova6+375332345678
-2017-10-20 13:32:16,042 main INFO  parsers.JAXBDemo - Driver:: ID=null Name=Ivan Surname=Pavlov Age=53 Address=MINSKTimiryazeva89+375298999999 Role=Driver Driving expierence=30 Address=MINSKTimiryazeva89+375298999999
-2017-10-20 13:32:16,042 main INFO  parsers.JAXBDemo - Janitor:: Name=Valentin Surname=Smirnov Age=55 Address=KLETSKRaduznaya5+375177896543 Role=Janitor Use instruments=true Address=KLETSKRaduznaya5+375177896543
+2017-11-10 13:22:16,843 main DEBUG logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+2017-11-10 13:22:16,935 main DEBUG pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2017-11-10 13:22:16,935 main DEBUG pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2017-11-10 13:22:16,935 main DEBUG pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+2017-11-10 13:22:16,936 main DEBUG pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.

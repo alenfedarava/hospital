@@ -2,11 +2,13 @@ package com.qaprosoft.hospital.models.dao;
 
 import java.util.List;
 
-public interface IDao<T> {
+import com.qaprosoft.hospital.models.AbstractEntity;
 
+public interface IDao<T extends AbstractEntity> {
+ 
 	void insert(T entity);
 
-	T getById(int id);
+	T getById(long id);
 
 	void update(T entity);
 

@@ -22,7 +22,7 @@ import com.qaprosoft.hospital.models.parsers.DateConverter;
  * @since 2017-07-17
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-public abstract class HospitalStaff {
+public abstract class HospitalStaff extends AbstractEntity {
 	@JsonProperty
 	private String firstName;
 	@JsonProperty

@@ -63,9 +63,6 @@ public class JDBCConnectionToSQL {
 			connection = DriverManager.getConnection(url, user, password);
 			if (!connection.isClosed())
 				System.out.println("Connection has been established");
-			// }catch (SQLException ex){
-			// System.err.println("Connection hasn't been established");
-			// ex.printStackTrace();
 			preparedStatement = connection.prepareStatement("SELECT * FROM HospitalStaff where age > ? and age < ?");
 			preparedStatement.setInt(1, 30);
 			preparedStatement.setInt(2, 50);

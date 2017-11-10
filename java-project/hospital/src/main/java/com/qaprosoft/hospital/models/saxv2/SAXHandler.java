@@ -8,11 +8,11 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import com.qaprosoft.hospital.models.Address;
+import com.qaprosoft.hospital.models.Cities;
 import com.qaprosoft.hospital.models.support.Driver;
 
 public class SAXHandler extends DefaultHandler {
 	List<Driver> drList = new ArrayList<>();
-	List<Address> address = new ArrayList<>();
 	Driver dr = null;
 	Address a = null;
 	String content = null;
@@ -56,9 +56,23 @@ public class SAXHandler extends DefaultHandler {
 		case "drivingExp":
 			dr.setDrivingExp(Integer.valueOf(content));
 			break;
-		case "address":
+		case "street":
 			a.setStreet(content);
 			break;
+		case "houseNumber":
+			a.setHouseNumber(Integer.valueOf(content));
+			break;
+		case "phone":
+			a.setPhone(content);
+			break;	
+		case "cities":
+			a.setCities(Cities.valueOf(content));
+			break;	
+		case "address":
+			dr.setAddress(a);
+		case "dateBirth":
+			dr.setDateBirth(content);
+		break;
 			
 		}
 	}

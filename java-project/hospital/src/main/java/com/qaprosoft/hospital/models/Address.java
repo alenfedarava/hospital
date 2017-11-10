@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 @XmlRootElement(name = "address")
 @JsonRootName(value = "address")
-public class Address {
+public class Address extends AbstractEntity{
 	@JsonProperty
 	private String street;
 	@JsonProperty
@@ -111,5 +111,6 @@ public class Address {
 	public void setCities(Cities cities) {
 		this.cities = cities;
 	}
+	
 
 }

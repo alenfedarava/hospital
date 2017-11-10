@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="DriverMapper">
+    <select id="getById" resultMap="driverMap">
+        SELECT
+            D.ID,
+            D.FIRST_NAME,
+            D.LAST_NAME,
+            D.AGE,
+            D.JOB_TITLE,
+            D.DATE_BIRTH,
+            D.RELATED_EDUCATION,
+            D.PRIVILEGE,
+            D.DRIVING_EXP
+        FROM driver D
+        WHERE D.ID = #{id}
+    </select>
+    <select id="getAll" resultMap="driverMap">
+        SELECT
+            D.ID,
+            D.NAME,
+            D.SURNAME
+            D.AGE
+        FROM drivers D
+    </select>
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO hospital.driver (FIRST_NAME, LAST_NAME, AGE, JOB_TITLE, DATE_BIRTH, RELATED_EDUCATION, PRIVILEGE, DRIVING_EXP, ADDRESS_ID)
+        VALUES (#{firstName}, #{lastName}, #{age}, #{jobTitle}, #{dateBirth}, #{relatedEducation}, #{privelege}, #{drivingExp}, #{address.id})
+    </insert>
+    <update id="update">
+        UPDATE driver
+        SET FIRST_NAME = #{firstName}, LAST_NAME = #{lastName}
+        WHERE ID = #{id}
+    </update>
+    <delete id="delete">
+        DELETE FROM driver
+        WHERE ID = #{id}
+    </delete>
+    <resultMap id="driverMap" type="com.qaprosoft.hospital.models.support.Driver" autoMapping="false">
+        <id property="id" column="ID"/>
+        <result property="firstName" column="FIRST_NAME"/>
+        <result property="lastName" column="LAST_NAME"/>
+        <result property="age" column="AGE"/>
+        <result property="jobTitle" column="JOB_TITLE"/>
+        <result property="dateBirth" column="DATE_BIRTH"/>
+        <result property="relatedEducation" column="RELATED_EDUCATION"/>
+        <result property="privelege" column="PRIVILEGE"/>
+        <result property="drivingExp" column="DRIVING_EXP"/>
+    </resultMap>
+</mapper>

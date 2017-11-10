@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="AddressMapper">
+    <select id="getById" resultMap="addressMap">
+        SELECT A.ID, A.STREET, A.HOUSE_NUMBER, A.PHONE, A.CITIES FROM address A WHERE A.ID = #{id}
+    </select>
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO hospital.address (STREET, HOUSE_NUMBER, PHONE, CITIES) VALUES (#{street}, #{houseNumber}, #{phone}, #{cities})
+    </insert>
+    <resultMap id="addressMap" type="com.qaprosoft.hospital.models.Address" autoMapping="false">
+        <id property="id" column="ID"/>
+        <result property="street" column="STREET"/>
+        <result property="houseNumber" column="HOUSE_NUMBER"/>
+        <result property="phone" column="PHONE"/>
+        <result property="cities" column="CITIES"/>
+    </resultMap>
+</mapper>

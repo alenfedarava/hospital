@@ -4,7 +4,7 @@ import com.qaprosoft.hospital.models.IEat;
 
 public class Driver extends Support implements IEat {
 	private int drivingExp;
-	private String id;
+	private long id;
 
 	public void drive() {
 
@@ -30,18 +30,24 @@ public class Driver extends Support implements IEat {
 
 	}
 
-	public String getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
 	public String toString() {
 		return "Driver:: ID=" + this.id + " Name=" + this.getFirstName() + " Surname=" + this.getLastName() + " Age="
 				+ this.getAge() + " Address=" + this.getAddress() + " Role=" + this.getJobTitle()
-				+ " Driving expierence=" + this.getDrivingExp() + " Address=" + this.getAddress();
-//		 + " Date of Birth=" + this.getDateBirth()
+				+ " Driving expierence=" + this.getDrivingExp() + " Address=" + this.getAddress() + " Date of Birth="
+				+ this.getDateBirth();
+
+	}
+
+	public void setId(String value) {
+		// TODO Auto-generated method stub
+		
 	}
 }

@@ -32,6 +32,7 @@ public class Janitor extends Support implements IEat {
 	public String toString() {
 		return "Janitor:: " + "Name=" + this.getFirstName() + " Surname=" + this.getLastName() + " Age="
 				+ this.getAge() + " Address=" + this.getAddress() + " Role=" + this.getJobTitle()
-				+ " Use instruments=" + this.isUseInstruments() + " Address=" + this.getAddress();
+				+ " Use instruments=" + this.isUseInstruments() + " Address=" + this.getAddress() + " Date of Birth="
+				+ this.getDateBirth();
 	}
 }
